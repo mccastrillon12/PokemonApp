@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Constants } from 'src/constants/constants';
 import { environment } from 'src/environments/environment';
 
 @Injectable({
@@ -7,7 +8,7 @@ import { environment } from 'src/environments/environment';
 })
 export class PokemonService {
 
-  baseUrl = environment.baseUrl;
+  baseUrl = Constants.UrlPokemonApp;
 
   constructor(private http: HttpClient) { }
 

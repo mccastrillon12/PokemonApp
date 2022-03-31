@@ -15,7 +15,7 @@
   <div class="row">
     <div class="col-md-10 offset-md-1"  >
       <div class="row row-cols-1 row-cols-md-5 g-4" style="margin-top:1px">
-    <input type="text" class="form-control" name="filterData" placeholder="search" [(ngModel)]="filterData">
+           <input type="text" class="form-control" name="filterData" placeholder="search" [(ngModel)]="filterData">
         <div *ngFor = "let pokemon of data | filter:filterData" class="col">
           <div class="card h-100" >
             <img [src]="pokemon.img" class="card-img-top" alt="...">
