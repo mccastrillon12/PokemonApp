@@ -14,16 +14,9 @@ export class PokeListComponent implements OnInit {
   data: any[] = [];
   types: any[] = [];
 
-
-
-
-
-
-
   constructor(private pokeService: PokemonService, private router: Router) {
 
    }
-
 
 
   ngOnInit(): void {
